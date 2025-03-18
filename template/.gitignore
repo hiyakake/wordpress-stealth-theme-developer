@@ -1,0 +1,28 @@
+# Node.js関連
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+
+# 環境設定ファイル
+.env
+
+# OS関連
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# エディタ関連
+.vscode/*
+!.vscode/sftp.json
+.idea/
+*.sublime-*
+*.swp
+*~
+
+# その他
+log/
+logs/
+tmp/
+temp/
+*.log 

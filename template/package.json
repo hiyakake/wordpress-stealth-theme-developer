@@ -1,0 +1,30 @@
+{
+  "name": "wp-theme-dev-solution",
+  "version": "1.0.0",
+  "description": "本番サイトのデータを使用しながら安全にWordPressテーマの開発ができるソリューション",
+  "main": "index.js",
+  "scripts": {
+    "browser-sync": "node script/browser-sync.js",
+    "upload": "node script/deploy.js",
+    "dev": "concurrently \"npm run browser-sync\" \"npm run upload\"",
+    "prepare": "node script/setup.js"
+  },
+  "keywords": [
+    "wordpress",
+    "theme",
+    "development",
+    "sftp",
+    "browser-sync",
+    "live-reload"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^3.0.0",
+    "chokidar": "^3.5.0",
+    "concurrently": "^8.0.0",
+    "dotenv": "^16.0.0",
+    "inquirer": "^8.0.0",
+    "ssh2-sftp-client": "^9.0.0"
+  }
+}
